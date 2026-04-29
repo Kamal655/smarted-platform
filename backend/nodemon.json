@@ -1,0 +1,18 @@
+{
+  "ignore": [
+    "*.pdf",
+    "*.json",
+    "generate_test_resume.js",
+    "Sample_Resume.pdf",
+    ".env"
+  ],
+  "watch": [
+    "index.js",
+    "routes/",
+    "controllers/",
+    "models/",
+    "middleware/",
+    "config/"
+  ],
+  "ext": "js,mjs"
+}
