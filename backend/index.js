@@ -92,6 +92,10 @@ app.use(notFound);
 app.use(errorHandler);
 
 // Start Server
-httpServer.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  httpServer.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+export default app;
